@@ -15,12 +15,4 @@
 
 @implementation YSAccountErrorDescriptionPrivacyView
 
-- (id)initWithAccountTypeIdentifier:(NSString *)typeID appIconImage:(UIImage*)appIconImage
-{
-    if (self = [super initWithAccountTypeIdentifier:typeID]) {
-        [self setAppIconImage:appIconImage];
-    }
-    return self;
-}
-
 @end

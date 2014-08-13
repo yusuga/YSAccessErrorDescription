@@ -29,8 +29,7 @@
 + (YSAccessErrorDescriptionView*)accountPrivacyErrorViewWithAccountTypeIdentifier:(NSString*)typeID
                                                                      appIconImage:(UIImage*)appIconImage
 {
-    return [[YSAccountErrorDescriptionPrivacyView alloc] initWithAccountTypeIdentifier:typeID
-                                                                          appIconImage:appIconImage];
+    return [[YSAccountErrorDescriptionPrivacyView alloc] initWithAccountTypeIdentifier:typeID];
 }
 
 + (YSAccessErrorDescriptionView*)accountZeroErrorWithAccountTypeIdentifier:(NSString*)typeID
@@ -68,6 +67,13 @@
     self.settingImageView.image = [[UIImage imageNamed:@"setting"] ys_filter:filter];
     self.privacyImageView.image = [[UIImage imageNamed:@"privacy"] ys_filter:filter];
     
+    if (self.appImageView) {
+        UIImage *appIcon = [UIImage imageNamed:@"AppIcon60x60"];
+        self.appImageView.image = [appIcon ys_filter:[self imageFilter]];
+        self.appLabel.text = [NSString stringWithFormat:self.appLabel.text, [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]];
+        [self.appLabel sizeToFit];
+    }
+    
     return self;
 }
 
@@ -89,13 +95,6 @@
 
 - (void)setAppIconImage:(UIImage*)appIconImage
 {
-    UIImage *icon = appIconImage;
-    if (icon == nil) {
-        icon = [UIImage imageNamed:@"Icon"];
-    }
-    self.appImageView.image = [icon ys_filter:[self imageFilter]];
-    self.appLabel.text = [NSString stringWithFormat:self.appLabel.text, [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]];
-    [self.appLabel sizeToFit];
 }
 
 @end

@@ -10,6 +10,4 @@
 
 @interface YSAccountErrorDescriptionPrivacyView : YSAccountErrorDescriptionBaseView
 
-- (id)initWithAccountTypeIdentifier:(NSString *)typeID appIconImage:(UIImage*)appIconImage;
-
 @end
