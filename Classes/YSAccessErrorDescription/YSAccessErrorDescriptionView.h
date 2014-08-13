@@ -14,8 +14,7 @@
 @interface YSAccessErrorDescriptionView : UIView
 
 /* Account */
-+ (YSAccessErrorDescriptionView*)accountPrivacyErrorViewWithAccountTypeIdentifier:(NSString*)typeID
-                                                                     appIconImage:(UIImage*)appIconImage;
++ (YSAccessErrorDescriptionView*)accountPrivacyErrorViewWithAccountTypeIdentifier:(NSString*)typeID;
 
 + (YSAccessErrorDescriptionView*)accountZeroErrorWithAccountTypeIdentifier:(NSString*)typeID;
 

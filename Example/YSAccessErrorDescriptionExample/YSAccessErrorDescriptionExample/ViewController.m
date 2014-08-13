@@ -61,8 +61,7 @@
     YSAccessErrorDescriptionView *descView;
     switch (sender.selectedSegmentIndex) {
         case 0:
-            descView = [YSAccessErrorDescriptionView accountPrivacyErrorViewWithAccountTypeIdentifier:typeID
-                                                                                         appIconImage:[self appIconImage]];
+            descView = [YSAccessErrorDescriptionView accountPrivacyErrorViewWithAccountTypeIdentifier:typeID];
             break;
         case 1:
             descView = [YSAccessErrorDescriptionView accountZeroErrorWithAccountTypeIdentifier:typeID];

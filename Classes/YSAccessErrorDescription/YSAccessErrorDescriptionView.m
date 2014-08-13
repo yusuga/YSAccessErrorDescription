@@ -27,7 +27,6 @@
 #pragma mark - Account
 
 + (YSAccessErrorDescriptionView*)accountPrivacyErrorViewWithAccountTypeIdentifier:(NSString*)typeID
-                                                                     appIconImage:(UIImage*)appIconImage
 {
     return [[YSAccountErrorDescriptionPrivacyView alloc] initWithAccountTypeIdentifier:typeID];
 }
