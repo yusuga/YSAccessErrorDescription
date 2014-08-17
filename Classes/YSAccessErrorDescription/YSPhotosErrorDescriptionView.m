@@ -20,7 +20,6 @@
 {
     if (self = [super init]) {
         self.photosImageView.image = [[UIImage imageNamed:@"photos"] ys_filter:[self imageFilter]];        
-        [self setAppIconImage:appIconImage];
     }
     return self;
 }

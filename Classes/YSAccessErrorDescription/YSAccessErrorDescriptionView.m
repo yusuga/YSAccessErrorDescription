@@ -92,8 +92,4 @@
     return filter;
 }
 
-- (void)setAppIconImage:(UIImage*)appIconImage
-{
-}
-
 @end

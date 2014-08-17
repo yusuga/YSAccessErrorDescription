@@ -29,6 +29,5 @@
 
 /* Utility */
 - (YSImageFilter*)imageFilter;
-- (void)setAppIconImage:(UIImage*)appIconImage;
 
 @end
