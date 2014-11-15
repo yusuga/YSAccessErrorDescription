@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import "YSAccessErrorDescriptionView.h"
-#import <CNPPopupController/CNPPopupController.h>
-#import <DLAlertView/DLAVAlertView.h>
 
 @interface ViewController ()
 

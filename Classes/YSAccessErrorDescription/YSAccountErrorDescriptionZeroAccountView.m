@@ -10,4 +10,9 @@
 
 @implementation YSAccountErrorDescriptionZeroAccountView
 
+- (NSString *)title
+{
+    return YSAccessErrorDescriptionLocalizedString(@"Account None");
+}
+
 @end
