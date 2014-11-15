@@ -18,20 +18,24 @@
 
 @implementation YSAccountErrorDescriptionBaseView
 
-- (id)initWithAccountTypeIdentifier:(NSString*)typeID
+- (instancetype)initWithSocialType:(YSAccessErrorDescriptionSocialType)type
 {
     if (self = [self init]) {
         
         YSImageFilter *filter = [self imageFilter];
         
-        if ([typeID isEqualToString:ACAccountTypeIdentifierFacebook]) {
-            self.socialLabel.text = [NSString stringWithFormat:self.socialLabel.text, @"Facebook"];
-            self.socialImageView.image = [[UIImage imageNamed:@"facebook"] ys_filter:filter];
-        } else if ([typeID isEqualToString:ACAccountTypeIdentifierTwitter]) {
-            self.socialLabel.text = [NSString stringWithFormat:self.socialLabel.text, @"Twitter"];
-            self.socialImageView.image = [[UIImage imageNamed:@"twitter"] ys_filter:filter];
-        } else {
-            NSLog(@"%s; Unsupported type: %@", __func__, typeID);
+        switch (type) {
+            case YSAccessErrorDescriptionSocialTypeTwitter:
+                self.socialLabel.text = [NSString stringWithFormat:self.socialLabel.text, @"Twitter"];
+                self.socialImageView.image = [[UIImage imageNamed:@"twitter"] ys_filter:filter];
+                break;
+            case YSAccessErrorDescriptionSocialTypeFacebook:
+                self.socialLabel.text = [NSString stringWithFormat:self.socialLabel.text, @"Facebook"];
+                self.socialImageView.image = [[UIImage imageNamed:@"facebook"] ys_filter:filter];
+                break;
+            default:
+                NSLog(@"%s; Unsupported social type: %zd", __func__, type);
+                break;
         }
         [self.socialLabel sizeToFit];
         
@@ -40,6 +44,11 @@
         }
     }
     return self;
+}
+
+- (NSString *)title
+{
+    return YSAccessErrorDescriptionLocalizedString(@"Account Error");
 }
 
 @end

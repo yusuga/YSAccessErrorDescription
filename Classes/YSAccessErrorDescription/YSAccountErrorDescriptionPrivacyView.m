@@ -15,4 +15,9 @@
 
 @implementation YSAccountErrorDescriptionPrivacyView
 
+- (NSString *)title
+{
+    return YSAccessErrorDescriptionLocalizedString(@"Privacy Error");
+}
+
 @end

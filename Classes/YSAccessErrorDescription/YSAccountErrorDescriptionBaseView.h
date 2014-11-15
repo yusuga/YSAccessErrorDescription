@@ -10,6 +10,6 @@
 
 @interface YSAccountErrorDescriptionBaseView : YSAccessErrorDescriptionView
 
-- (id)initWithAccountTypeIdentifier:(NSString*)typeID;
+- (instancetype)initWithSocialType:(YSAccessErrorDescriptionSocialType)type;
 
 @end

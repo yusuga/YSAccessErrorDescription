@@ -8,99 +8,165 @@
 
 #import "ViewController.h"
 #import "YSAccessErrorDescriptionView.h"
+#import <CNPPopupController/CNPPopupController.h>
+#import <DLAlertView/DLAVAlertView.h>
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *accountErrorControl;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *socialControl;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *photosErrorControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *privacyControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *zeroControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *permissionControl;
 
-@property (nonatomic) UIView *descriptionView;
+@property (weak, nonatomic) IBOutlet UIView *descriptionContainerView;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *colorControl;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
+#pragma mark - Privacy
+
+- (IBAction)privacyControlDidChange:(UISegmentedControl *)sender
 {
-    [super viewDidLoad];
-    
-    [self accountErrorControlDidChange:self.accountErrorControl];
+    self.zeroControl.selectedSegmentIndex = self.permissionControl.selectedSegmentIndex = -1;
+    [self addErrorDescriptionView:[self accountPrivacyErrorDescriptionView]];
 }
 
-- (void)addDescriptionView:(YSAccessErrorDescriptionView*)view
+- (IBAction)privacyPresentButtonDidPush:(id)sender
 {
-    [self.descriptionView removeFromSuperview];
-    
-    view.backgroundColor = [UIColor lightGrayColor];
-    [view setTextColor:[UIColor whiteColor] noteColor:[UIColor redColor]];
-    
-    CGRect f = view.frame;
-    f.origin.y = CGRectGetMaxY(self.photosErrorControl.frame) + 20.f;
-    view.frame = f;
-    [self.view addSubview:view];
-    
-    self.descriptionView = view;
-}
-
-- (IBAction)accountErrorControlDidChange:(UISegmentedControl *)sender
-{
-    NSString *typeID;
-    switch (self.socialControl.selectedSegmentIndex) {
-        case 0:
-            typeID = ACAccountTypeIdentifierTwitter;
-            break;
-        case 1:
-            typeID = ACAccountTypeIdentifierFacebook;
-            break;
-        default:
-            abort();
-            break;
+    if (self.privacyControl.selectedSegmentIndex == -1) {
+        self.privacyControl.selectedSegmentIndex = 0;
     }
     
-    YSAccessErrorDescriptionView *descView;
-    switch (sender.selectedSegmentIndex) {
+    YSAccessErrorDescriptionView *view = [self accountPrivacyErrorDescriptionView];
+    [self configureColorToErrorDescriptionView:view];
+    [view show];
+}
+
+- (YSAccessErrorDescriptionView*)accountPrivacyErrorDescriptionView
+{
+    switch (self.privacyControl.selectedSegmentIndex) {
         case 0:
-            descView = [YSAccessErrorDescriptionView accountPrivacyErrorViewWithAccountTypeIdentifier:typeID];
-            break;
+            return [YSAccessErrorDescriptionView accountPrivacyErrorViewWithSocialType:YSAccessErrorDescriptionSocialTypeTwitter];
         case 1:
-            descView = [YSAccessErrorDescriptionView accountZeroErrorWithAccountTypeIdentifier:typeID];
-            break;
+            return [YSAccessErrorDescriptionView accountPrivacyErrorViewWithSocialType:YSAccessErrorDescriptionSocialTypeFacebook];
         case 2:
-            descView = [YSAccessErrorDescriptionView accountPermissionDeniedErrorWithAccountTypeIdentifier:typeID];
-            break;
+            return [YSAccessErrorDescriptionView photosPrivacyErrorView];
         default:
             abort();
     }
-    [self addDescriptionView:descView];
 }
 
-- (IBAction)socialControlDidChange:(UISegmentedControl *)sender
+#pragma mark - Account Zero
+
+- (IBAction)zeroControlDidChange:(UISegmentedControl *)sender
 {
-    [self accountErrorControlDidChange:self.accountErrorControl];
+    self.privacyControl.selectedSegmentIndex = self.permissionControl.selectedSegmentIndex = -1;
+    [self addErrorDescriptionView:[self accountZeroErrorDescriptionView]];
 }
 
-- (IBAction)photosErrorControlDidChange:(UISegmentedControl *)sender
+- (IBAction)zeroPresentButtonDidPush:(id)sender
 {
-    switch (sender.selectedSegmentIndex) {
+    if (self.zeroControl.selectedSegmentIndex == -1) {
+        self.zeroControl.selectedSegmentIndex = 0;
+    }
+    
+    YSAccessErrorDescriptionView *view = [self accountZeroErrorDescriptionView];
+    [self configureColorToErrorDescriptionView:view];
+    [view show];
+}
+
+- (YSAccessErrorDescriptionView*)accountZeroErrorDescriptionView
+{
+    switch (self.zeroControl.selectedSegmentIndex) {
         case 0:
-            [self.descriptionView removeFromSuperview];
-            self.descriptionView = nil;
+            return [YSAccessErrorDescriptionView accountZeroErrorWithSocialType:YSAccessErrorDescriptionSocialTypeTwitter];
+        case 1:
+            return [YSAccessErrorDescriptionView accountZeroErrorWithSocialType:YSAccessErrorDescriptionSocialTypeFacebook];
+        default:
+            abort();
+    }
+}
+
+#pragma mark - Account Permission
+
+- (IBAction)permissionControlDidChange:(UISegmentedControl *)sender
+{
+    self.privacyControl.selectedSegmentIndex = self.zeroControl.selectedSegmentIndex = -1;
+    [self addErrorDescriptionView:[self accountPermissionErrorDescriptionView]];
+}
+
+- (IBAction)permissionPresentButtonDidPush:(id)sender
+{
+    if (self.permissionControl.selectedSegmentIndex == -1) {
+        self.permissionControl.selectedSegmentIndex = 0;
+    }
+    
+    YSAccessErrorDescriptionView *view = [self accountPermissionErrorDescriptionView];
+    [self configureColorToErrorDescriptionView:view];
+    [view show];
+}
+
+- (YSAccessErrorDescriptionView*)accountPermissionErrorDescriptionView
+{
+    switch (self.permissionControl.selectedSegmentIndex) {
+        case 0:
+            return [YSAccessErrorDescriptionView accountPermissionDeniedErrorWithSocialType:YSAccessErrorDescriptionSocialTypeTwitter];
+        case 1:
+            return [YSAccessErrorDescriptionView accountPermissionDeniedErrorWithSocialType:YSAccessErrorDescriptionSocialTypeFacebook];
+        default:
+            abort();
+    }
+}
+
+#pragma mark -
+
+- (IBAction)colorControlDidChange:(id)sender
+{
+    if (self.privacyControl.selectedSegmentIndex != -1) {
+        [self privacyControlDidChange:self.privacyControl];
+    } else if (self.zeroControl.selectedSegmentIndex != -1) {
+        [self zeroControlDidChange:self.zeroControl];
+    } else if (self.permissionControl.selectedSegmentIndex != -1) {
+        [self permissionControlDidChange:self.permissionControl];
+    }
+}
+
+- (void)configureColorToErrorDescriptionView:(YSAccessErrorDescriptionView*)view
+{
+    UIColor *bgColor, *textColor, *noteColor;
+    switch (self.colorControl.selectedSegmentIndex) {
+        case 0:
+            bgColor = [UIColor whiteColor];
+            textColor = [UIColor blackColor];
+            noteColor = [UIColor redColor];
             break;
         case 1:
-            [self addDescriptionView:[YSAccessErrorDescriptionView photosPrivacyErrorViewWithAppIconImage:[self appIconImage]]];
+            bgColor = [UIColor lightGrayColor];
+            textColor = [UIColor whiteColor];
+            noteColor = [UIColor redColor];
             break;
         default:
             abort();
-            break;
     }
+    
+    view.backgroundColor = bgColor;
+    [view setTextColor:textColor noteColor:noteColor];
 }
 
-#pragma mark - Utility
-
-- (UIImage*)appIconImage
+- (void)addErrorDescriptionView:(YSAccessErrorDescriptionView*)view
 {
-    return [UIImage imageNamed:@"app-icon"];
+    for (UIView *view in self.descriptionContainerView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    [self configureColorToErrorDescriptionView:view];
+    
+    view.center = CGPointMake(self.descriptionContainerView.bounds.size.width/2.f,
+                              self.descriptionContainerView.bounds.size.height/2.f);
+    
+    [self.descriptionContainerView addSubview:view];
 }
 
 @end

@@ -10,6 +10,4 @@
 
 @interface YSPhotosErrorDescriptionView : YSAccessErrorDescriptionView
 
-- (instancetype)initWithAppIconImage:(UIImage*)appIconImage;
-
 @end

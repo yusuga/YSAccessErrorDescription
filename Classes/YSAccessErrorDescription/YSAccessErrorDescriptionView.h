@@ -8,24 +8,35 @@
 
 #import <UIKit/UIKit.h>
 #import <YSImageFilter/UIImage+YSImageFilter.h>
-@import Accounts;
 #import "YSAccessErrorDescriptionView.h"
+#import "YSAccessErrorDescriptionUtility.h"
 
-@interface YSAccessErrorDescriptionView : UIView
+typedef NS_ENUM(NSUInteger, YSAccessErrorDescriptionSocialType) {
+    YSAccessErrorDescriptionSocialTypeTwitter,
+    YSAccessErrorDescriptionSocialTypeFacebook,
+};
+
+@protocol YSAccessErrorDescriptionViewProtocol <NSObject>
+
+- (NSString*)title;
+
+@end
+
+@interface YSAccessErrorDescriptionView : UIView <YSAccessErrorDescriptionViewProtocol>
 
 /* Account */
-+ (YSAccessErrorDescriptionView*)accountPrivacyErrorViewWithAccountTypeIdentifier:(NSString*)typeID;
-
-+ (YSAccessErrorDescriptionView*)accountZeroErrorWithAccountTypeIdentifier:(NSString*)typeID;
-
-+ (YSAccessErrorDescriptionView*)accountPermissionDeniedErrorWithAccountTypeIdentifier:(NSString*)typeID;
++ (instancetype)accountPrivacyErrorViewWithSocialType:(YSAccessErrorDescriptionSocialType)type;
++ (instancetype)accountZeroErrorWithSocialType:(YSAccessErrorDescriptionSocialType)type;
++ (instancetype)accountPermissionDeniedErrorWithSocialType:(YSAccessErrorDescriptionSocialType)type;
 
 /* Photos */
-
-+ (YSAccessErrorDescriptionView*)photosPrivacyErrorViewWithAppIconImage:(UIImage*)appIconImage;
++ (instancetype)photosPrivacyErrorView;
 
 /* Setting */
 - (void)setTextColor:(UIColor*)textColor noteColor:(UIColor*)noteColor;
+
+/* Alert */
+- (void)show;
 
 /* Utility */
 - (YSImageFilter*)imageFilter;

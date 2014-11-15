@@ -1,5 +1,6 @@
 platform :ios, '7.0'
 pod 'YSHelper'
 pod 'YSImageFilter'
+pod 'KLCPopup'
 
 pod 'YSAccountStore'

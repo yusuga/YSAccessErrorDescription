@@ -12,6 +12,7 @@
 #import "YSAccountErrorDescriptionZeroAccountView.h"
 #import "YSAccountErrorDescriptionPermissionDeniedView.h"
 #import "YSPhotosErrorDescriptionView.h"
+#import "YSAccessErrorDescriptionAlertView.h"
 
 @interface YSAccessErrorDescriptionView ()
 
@@ -26,26 +27,26 @@
 
 #pragma mark - Account
 
-+ (YSAccessErrorDescriptionView*)accountPrivacyErrorViewWithAccountTypeIdentifier:(NSString*)typeID
++ (instancetype)accountPrivacyErrorViewWithSocialType:(YSAccessErrorDescriptionSocialType)type
 {
-    return [[YSAccountErrorDescriptionPrivacyView alloc] initWithAccountTypeIdentifier:typeID];
+    return [[YSAccountErrorDescriptionPrivacyView alloc] initWithSocialType:type];
 }
 
-+ (YSAccessErrorDescriptionView*)accountZeroErrorWithAccountTypeIdentifier:(NSString*)typeID
++ (instancetype)accountZeroErrorWithSocialType:(YSAccessErrorDescriptionSocialType)type;
 {
-    return [[YSAccountErrorDescriptionZeroAccountView alloc] initWithAccountTypeIdentifier:typeID];
+    return [[YSAccountErrorDescriptionZeroAccountView alloc] initWithSocialType:type];
 }
 
-+ (YSAccessErrorDescriptionView*)accountPermissionDeniedErrorWithAccountTypeIdentifier:(NSString*)typeID
++ (instancetype)accountPermissionDeniedErrorWithSocialType:(YSAccessErrorDescriptionSocialType)type
 {
-    return [[YSAccountErrorDescriptionPermissionDeniedView alloc] initWithAccountTypeIdentifier:typeID];
+    return [[YSAccountErrorDescriptionPermissionDeniedView alloc] initWithSocialType:type];
 }
 
 #pragma mark - Photos
 
-+ (YSAccessErrorDescriptionView*)photosPrivacyErrorViewWithAppIconImage:(UIImage*)appIconImage
++ (instancetype)photosPrivacyErrorView
 {
-    return [[YSPhotosErrorDescriptionView alloc] initWithAppIconImage:appIconImage];
+    return [[YSPhotosErrorDescriptionView alloc] init];
 }
 
 #pragma mark - Initial
@@ -68,6 +69,10 @@
     
     if (self.appImageView) {
         UIImage *appIcon = [UIImage imageNamed:@"AppIcon60x60"];
+        UIImage *padAppIcon = [UIImage imageNamed:@"AppIcon76x76"];
+        if (padAppIcon.size.width > appIcon.size.width) {
+            appIcon = padAppIcon;
+        }        
         self.appImageView.image = [appIcon ys_filter:[self imageFilter]];
         self.appLabel.text = [NSString stringWithFormat:self.appLabel.text, [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]];
         [self.appLabel sizeToFit];
@@ -83,6 +88,12 @@
     [UILabel appearanceWhenContainedIn:[self class], nil].textColor = textColor;
 }
 
+- (void)show
+{
+    [[YSAccessErrorDescriptionAlertView viewWithTitle:[self title]
+                                         contentView:self] show];
+}
+
 #pragma mark Utility
 
 - (YSImageFilter*)imageFilter
@@ -90,6 +101,13 @@
     YSImageFilter *filter = [[YSImageFilter alloc] init];
     filter.mask = YSImageFilterMaskRoundedCornersIOS7RadiusRatio;
     return filter;
+}
+
+#pragma mark - YSAccessErrorDescriptionView
+
+- (NSString *)title
+{
+    abort();
 }
 
 @end

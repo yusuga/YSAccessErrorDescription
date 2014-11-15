@@ -16,7 +16,7 @@
 
 @implementation YSPhotosErrorDescriptionView
 
-- (instancetype)initWithAppIconImage:(UIImage*)appIconImage
+- (instancetype)init
 {
     if (self = [super init]) {
         self.photosImageView.image = [[UIImage imageNamed:@"photos"] ys_filter:[self imageFilter]];        
@@ -24,5 +24,9 @@
     return self;
 }
 
+- (NSString *)title
+{
+    return YSAccessErrorDescriptionLocalizedString(@"Privacy Error");
+}
 
 @end

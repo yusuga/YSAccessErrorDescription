@@ -22,13 +22,7 @@
 		B80D45B4199298E500DB2A8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80D4596199298E400DB2A8E /* UIKit.framework */; };
 		B80D45BC199298E500DB2A8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B80D45BA199298E500DB2A8E /* InfoPlist.strings */; };
 		B80D45BE199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D45BD199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests.m */; };
-		B80D45DD199299BA00DB2A8E /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80D45CC199299BA00DB2A8E /* facebook@2x.png */; };
-		B80D45DE199299BA00DB2A8E /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80D45CD199299BA00DB2A8E /* person@2x.png */; };
-		B80D45DF199299BA00DB2A8E /* privacy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80D45CE199299BA00DB2A8E /* privacy@2x.png */; };
-		B80D45E0199299BA00DB2A8E /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80D45CF199299BA00DB2A8E /* setting@2x.png */; };
-		B80D45E1199299BA00DB2A8E /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80D45D0199299BA00DB2A8E /* twitter@2x.png */; };
 		B80D45FE19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D45FD19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m */; };
-		B80D46061992A44700DB2A8E /* photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B80D46051992A44700DB2A8E /* photos@2x.png */; };
 		B80D46161993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D460C1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m */; };
 		B80D46171993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D460E1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m */; };
 		B80D46181993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80D460F1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib */; };
@@ -38,6 +32,23 @@
 		B80D461C1993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80D46151993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib */; };
 		B80D46211993094F00DB2A8E /* YSPhotosErrorDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D461F1993094F00DB2A8E /* YSPhotosErrorDescriptionView.m */; };
 		B80D46221993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80D46201993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib */; };
+		B82055C11A148D74002834AB /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B51A148D74002834AB /* facebook@2x.png */; };
+		B82055C21A148D74002834AB /* facebook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B61A148D74002834AB /* facebook@3x.png */; };
+		B82055C31A148D74002834AB /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B71A148D74002834AB /* person@2x.png */; };
+		B82055C41A148D74002834AB /* person@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B81A148D74002834AB /* person@3x.png */; };
+		B82055C51A148D74002834AB /* photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B91A148D74002834AB /* photos@2x.png */; };
+		B82055C61A148D74002834AB /* photos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055BA1A148D74002834AB /* photos@3x.png */; };
+		B82055C71A148D74002834AB /* privacy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055BB1A148D74002834AB /* privacy@2x.png */; };
+		B82055C81A148D74002834AB /* privacy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055BC1A148D74002834AB /* privacy@3x.png */; };
+		B82055C91A148D74002834AB /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055BD1A148D74002834AB /* setting@2x.png */; };
+		B82055CA1A148D74002834AB /* setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055BE1A148D74002834AB /* setting@3x.png */; };
+		B82055CB1A148D74002834AB /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055BF1A148D74002834AB /* twitter@2x.png */; };
+		B82055CC1A148D74002834AB /* twitter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055C01A148D74002834AB /* twitter@3x.png */; };
+		B82055CE1A149165002834AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82055CD1A149165002834AB /* LaunchScreen.xib */; };
+		B83610A71A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83610A61A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib */; };
+		B83610AA1A171C050096261D /* YSAccessErrorDescriptionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83610A91A171C050096261D /* YSAccessErrorDescriptionAlertView.m */; };
+		B83610AE1A1723770096261D /* YSAccessErrorDescriptionUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B83610AD1A1723770096261D /* YSAccessErrorDescriptionUtility.m */; };
+		B83610B11A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B83610B31A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,14 +82,8 @@
 		B80D45B9199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSAccessErrorDescriptionExampleTests-Info.plist"; sourceTree = "<group>"; };
 		B80D45BB199298E500DB2A8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B80D45BD199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionExampleTests.m; sourceTree = "<group>"; };
-		B80D45CC199299BA00DB2A8E /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
-		B80D45CD199299BA00DB2A8E /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person@2x.png"; sourceTree = "<group>"; };
-		B80D45CE199299BA00DB2A8E /* privacy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "privacy@2x.png"; sourceTree = "<group>"; };
-		B80D45CF199299BA00DB2A8E /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
-		B80D45D0199299BA00DB2A8E /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
 		B80D45FC19929AAB00DB2A8E /* YSAccessErrorDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionView.h; sourceTree = "<group>"; };
 		B80D45FD19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionView.m; sourceTree = "<group>"; };
-		B80D46051992A44700DB2A8E /* photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos@2x.png"; sourceTree = "<group>"; };
 		B80D460B1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionBaseView.h; sourceTree = "<group>"; };
 		B80D460C1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionBaseView.m; sourceTree = "<group>"; };
 		B80D460D1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionPermissionDeniedView.h; sourceTree = "<group>"; };
@@ -93,6 +98,26 @@
 		B80D461E1993094F00DB2A8E /* YSPhotosErrorDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSPhotosErrorDescriptionView.h; sourceTree = "<group>"; };
 		B80D461F1993094F00DB2A8E /* YSPhotosErrorDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSPhotosErrorDescriptionView.m; sourceTree = "<group>"; };
 		B80D46201993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSPhotosErrorDescriptionView.xib; sourceTree = "<group>"; };
+		B82055B51A148D74002834AB /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
+		B82055B61A148D74002834AB /* facebook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@3x.png"; sourceTree = "<group>"; };
+		B82055B71A148D74002834AB /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person@2x.png"; sourceTree = "<group>"; };
+		B82055B81A148D74002834AB /* person@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person@3x.png"; sourceTree = "<group>"; };
+		B82055B91A148D74002834AB /* photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos@2x.png"; sourceTree = "<group>"; };
+		B82055BA1A148D74002834AB /* photos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos@3x.png"; sourceTree = "<group>"; };
+		B82055BB1A148D74002834AB /* privacy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "privacy@2x.png"; sourceTree = "<group>"; };
+		B82055BC1A148D74002834AB /* privacy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "privacy@3x.png"; sourceTree = "<group>"; };
+		B82055BD1A148D74002834AB /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
+		B82055BE1A148D74002834AB /* setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@3x.png"; sourceTree = "<group>"; };
+		B82055BF1A148D74002834AB /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		B82055C01A148D74002834AB /* twitter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@3x.png"; sourceTree = "<group>"; };
+		B82055CD1A149165002834AB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		B83610A61A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccessErrorDescriptionAlertView.xib; sourceTree = "<group>"; };
+		B83610A81A171C050096261D /* YSAccessErrorDescriptionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionAlertView.h; sourceTree = "<group>"; };
+		B83610A91A171C050096261D /* YSAccessErrorDescriptionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionAlertView.m; sourceTree = "<group>"; };
+		B83610AC1A1723770096261D /* YSAccessErrorDescriptionUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionUtility.h; sourceTree = "<group>"; };
+		B83610AD1A1723770096261D /* YSAccessErrorDescriptionUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionUtility.m; sourceTree = "<group>"; };
+		B83610B21A1723BA0096261D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/YSAccessErrorDescriptionLocalizable.strings; sourceTree = "<group>"; };
+		B83610B41A1723C50096261D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/YSAccessErrorDescriptionLocalizable.strings; sourceTree = "<group>"; };
 		F9C15BEBA71B481F9DA9C825 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,6 +188,7 @@
 				B80D45A7199298E400DB2A8E /* ViewController.h */,
 				B80D45A8199298E400DB2A8E /* ViewController.m */,
 				B80D45AA199298E400DB2A8E /* Images.xcassets */,
+				B82055CD1A149165002834AB /* LaunchScreen.xib */,
 				B80D4599199298E400DB2A8E /* Supporting Files */,
 			);
 			path = YSAccessErrorDescriptionExample;
@@ -216,23 +242,43 @@
 				B80D461E1993094F00DB2A8E /* YSPhotosErrorDescriptionView.h */,
 				B80D461F1993094F00DB2A8E /* YSPhotosErrorDescriptionView.m */,
 				B80D46201993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib */,
-				B80D45CB199299BA00DB2A8E /* Images */,
+				B83610A81A171C050096261D /* YSAccessErrorDescriptionAlertView.h */,
+				B83610A91A171C050096261D /* YSAccessErrorDescriptionAlertView.m */,
+				B83610A61A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib */,
+				B83610AC1A1723770096261D /* YSAccessErrorDescriptionUtility.h */,
+				B83610AD1A1723770096261D /* YSAccessErrorDescriptionUtility.m */,
+				B82055B41A148D74002834AB /* Images */,
+				B83610AB1A17234A0096261D /* Localization */,
 			);
 			name = YSAccessErrorDescription;
 			path = ../../Classes/YSAccessErrorDescription;
 			sourceTree = "<group>";
 		};
-		B80D45CB199299BA00DB2A8E /* Images */ = {
+		B82055B41A148D74002834AB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				B80D45CC199299BA00DB2A8E /* facebook@2x.png */,
-				B80D45CD199299BA00DB2A8E /* person@2x.png */,
-				B80D45CE199299BA00DB2A8E /* privacy@2x.png */,
-				B80D45CF199299BA00DB2A8E /* setting@2x.png */,
-				B80D45D0199299BA00DB2A8E /* twitter@2x.png */,
-				B80D46051992A44700DB2A8E /* photos@2x.png */,
+				B82055B51A148D74002834AB /* facebook@2x.png */,
+				B82055B61A148D74002834AB /* facebook@3x.png */,
+				B82055B71A148D74002834AB /* person@2x.png */,
+				B82055B81A148D74002834AB /* person@3x.png */,
+				B82055B91A148D74002834AB /* photos@2x.png */,
+				B82055BA1A148D74002834AB /* photos@3x.png */,
+				B82055BB1A148D74002834AB /* privacy@2x.png */,
+				B82055BC1A148D74002834AB /* privacy@3x.png */,
+				B82055BD1A148D74002834AB /* setting@2x.png */,
+				B82055BE1A148D74002834AB /* setting@3x.png */,
+				B82055BF1A148D74002834AB /* twitter@2x.png */,
+				B82055C01A148D74002834AB /* twitter@3x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		B83610AB1A17234A0096261D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B83610B31A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +342,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = B80D4586199298E400DB2A8E;
 			productRefGroup = B80D4590199298E400DB2A8E /* Products */;
@@ -313,19 +360,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B80D45DE199299BA00DB2A8E /* person@2x.png in Resources */,
+				B82055CE1A149165002834AB /* LaunchScreen.xib in Resources */,
 				B80D45AB199298E400DB2A8E /* Images.xcassets in Resources */,
+				B82055CA1A148D74002834AB /* setting@3x.png in Resources */,
+				B82055CB1A148D74002834AB /* twitter@2x.png in Resources */,
 				B80D46181993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib in Resources */,
-				B80D45E0199299BA00DB2A8E /* setting@2x.png in Resources */,
 				B80D461C1993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib in Resources */,
 				B80D459D199298E400DB2A8E /* InfoPlist.strings in Resources */,
-				B80D45DF199299BA00DB2A8E /* privacy@2x.png in Resources */,
-				B80D45DD199299BA00DB2A8E /* facebook@2x.png in Resources */,
-				B80D45E1199299BA00DB2A8E /* twitter@2x.png in Resources */,
-				B80D46061992A44700DB2A8E /* photos@2x.png in Resources */,
+				B83610B11A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings in Resources */,
+				B82055C21A148D74002834AB /* facebook@3x.png in Resources */,
+				B82055C71A148D74002834AB /* privacy@2x.png in Resources */,
+				B82055C41A148D74002834AB /* person@3x.png in Resources */,
+				B82055C31A148D74002834AB /* person@2x.png in Resources */,
+				B83610A71A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib in Resources */,
+				B82055C51A148D74002834AB /* photos@2x.png in Resources */,
+				B82055C91A148D74002834AB /* setting@2x.png in Resources */,
 				B80D461A1993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.xib in Resources */,
+				B82055C81A148D74002834AB /* privacy@3x.png in Resources */,
 				B80D45A6199298E400DB2A8E /* Main.storyboard in Resources */,
+				B82055C11A148D74002834AB /* facebook@2x.png in Resources */,
 				B80D46221993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib in Resources */,
+				B82055C61A148D74002834AB /* photos@3x.png in Resources */,
+				B82055CC1A148D74002834AB /* twitter@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,9 +439,11 @@
 				B80D45FE19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m in Sources */,
 				B80D46171993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m in Sources */,
 				B80D461B1993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.m in Sources */,
+				B83610AE1A1723770096261D /* YSAccessErrorDescriptionUtility.m in Sources */,
 				B80D46161993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m in Sources */,
 				B80D45A3199298E400DB2A8E /* AppDelegate.m in Sources */,
 				B80D459F199298E400DB2A8E /* main.m in Sources */,
+				B83610AA1A171C050096261D /* YSAccessErrorDescriptionAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +488,15 @@
 				B80D45BB199298E500DB2A8E /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B83610B31A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B83610B21A1723BA0096261D /* Base */,
+				B83610B41A1723C50096261D /* ja */,
+			);
+			name = YSAccessErrorDescriptionLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -510,11 +577,11 @@
 			baseConfigurationReference = 8EEE3739F01B4418A6CF5FCE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YSAccessErrorDescriptionExample/YSAccessErrorDescriptionExample-Prefix.pch";
 				INFOPLIST_FILE = "YSAccessErrorDescriptionExample/YSAccessErrorDescriptionExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -524,11 +591,11 @@
 			baseConfigurationReference = 8EEE3739F01B4418A6CF5FCE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YSAccessErrorDescriptionExample/YSAccessErrorDescriptionExample-Prefix.pch";
 				INFOPLIST_FILE = "YSAccessErrorDescriptionExample/YSAccessErrorDescriptionExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
