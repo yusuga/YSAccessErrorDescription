@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'YSAccessErrorDescription'
-  s.version = '0.1.2'
+  s.version = '0.1.3'
   s.summary = 'iOS access errors description.'
   s.homepage = 'https://github.com/yusuga/YSAccessErrorDescription'
   s.license = 'MIT'
@@ -19,11 +19,9 @@ Pod::Spec.new do |s|
   s.dependency 'KLCPopup'
   
   s.subspec 'Utility' do |ss|
-    ss.dependency 'YSAccessErrorDescription/Utility'
     ss.source_files = 'Classes/YSAccessErrorDescription/Utility/*.{h,m}'
   end
   s.subspec 'AlertView' do |ss|
-    ss.dependency 'YSAccessErrorDescription/AlertView'
     ss.source_files = 'Classes/YSAccessErrorDescription/AlertView/*.{h,m}'
     ss.resources    = 'Classes/YSAccessErrorDescription/AlertView/*.xib'
   end
