@@ -90,10 +90,13 @@
 
 - (void)show
 {
+    [self showWithDidFinishDismissingCompletion:NULL];
+}
+
+- (void)showWithDidFinishDismissingCompletion:(void(^)(void))didFinishDismissingCompletion
+{
     [[YSAccessErrorDescriptionAlertView viewWithTitle:[self title]
-                                          contentView:self] showWithDidFinishDismissingCompletion:^{
-        NSLog(@"didFinishDismissingCompletion");
-    }];
+                                          contentView:self] showWithDidFinishDismissingCompletion:didFinishDismissingCompletion];
 }
 
 #pragma mark Utility

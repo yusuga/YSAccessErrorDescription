@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <YSImageFilter/UIImage+YSImageFilter.h>
-#import "YSAccessErrorDescriptionView.h"
 #import "YSAccessErrorDescriptionUtility.h"
 
 typedef NS_ENUM(NSUInteger, YSAccessErrorDescriptionSocialType) {
@@ -37,6 +36,7 @@ typedef NS_ENUM(NSUInteger, YSAccessErrorDescriptionSocialType) {
 
 /* Alert */
 - (void)show;
+- (void)showWithDidFinishDismissingCompletion:(void(^)(void))didFinishDismissingCompletion;
 
 /* Utility */
 - (YSImageFilter*)imageFilter;

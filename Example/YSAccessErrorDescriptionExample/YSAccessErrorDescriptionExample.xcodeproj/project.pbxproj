@@ -22,16 +22,6 @@
 		B80D45B4199298E500DB2A8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80D4596199298E400DB2A8E /* UIKit.framework */; };
 		B80D45BC199298E500DB2A8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B80D45BA199298E500DB2A8E /* InfoPlist.strings */; };
 		B80D45BE199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D45BD199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests.m */; };
-		B80D45FE19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D45FD19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m */; };
-		B80D46161993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D460C1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m */; };
-		B80D46171993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D460E1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m */; };
-		B80D46181993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80D460F1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib */; };
-		B80D46191993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D46111993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.m */; };
-		B80D461A1993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80D46121993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.xib */; };
-		B80D461B1993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D46141993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.m */; };
-		B80D461C1993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80D46151993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib */; };
-		B80D46211993094F00DB2A8E /* YSPhotosErrorDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B80D461F1993094F00DB2A8E /* YSPhotosErrorDescriptionView.m */; };
-		B80D46221993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B80D46201993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib */; };
 		B82055C11A148D74002834AB /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B51A148D74002834AB /* facebook@2x.png */; };
 		B82055C21A148D74002834AB /* facebook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B61A148D74002834AB /* facebook@3x.png */; };
 		B82055C31A148D74002834AB /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055B71A148D74002834AB /* person@2x.png */; };
@@ -45,10 +35,20 @@
 		B82055CB1A148D74002834AB /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055BF1A148D74002834AB /* twitter@2x.png */; };
 		B82055CC1A148D74002834AB /* twitter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82055C01A148D74002834AB /* twitter@3x.png */; };
 		B82055CE1A149165002834AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82055CD1A149165002834AB /* LaunchScreen.xib */; };
-		B83610A71A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B83610A61A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib */; };
-		B83610AA1A171C050096261D /* YSAccessErrorDescriptionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83610A91A171C050096261D /* YSAccessErrorDescriptionAlertView.m */; };
-		B83610AE1A1723770096261D /* YSAccessErrorDescriptionUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B83610AD1A1723770096261D /* YSAccessErrorDescriptionUtility.m */; };
 		B83610B11A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B83610B31A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings */; };
+		B886DE491A4E424800F98485 /* YSAccessErrorDescriptionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE341A4E424800F98485 /* YSAccessErrorDescriptionAlertView.m */; };
+		B886DE4A1A4E424800F98485 /* YSAccessErrorDescriptionAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B886DE351A4E424800F98485 /* YSAccessErrorDescriptionAlertView.xib */; };
+		B886DE591A4E427C00F98485 /* YSAccessErrorDescriptionUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE581A4E427C00F98485 /* YSAccessErrorDescriptionUtility.m */; };
+		B886DE6D1A4E44A400F98485 /* YSAccessErrorDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE5E1A4E44A400F98485 /* YSAccessErrorDescriptionView.m */; };
+		B886DE6E1A4E44A400F98485 /* YSAccountErrorDescriptionBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE601A4E44A400F98485 /* YSAccountErrorDescriptionBaseView.m */; };
+		B886DE6F1A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE621A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.m */; };
+		B886DE701A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B886DE631A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.xib */; };
+		B886DE711A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE651A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.m */; };
+		B886DE721A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B886DE661A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.xib */; };
+		B886DE731A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE681A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.m */; };
+		B886DE741A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B886DE691A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.xib */; };
+		B886DE751A4E44A400F98485 /* YSPhotosErrorDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B886DE6B1A4E44A400F98485 /* YSPhotosErrorDescriptionView.m */; };
+		B886DE761A4E44A400F98485 /* YSPhotosErrorDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B886DE6C1A4E44A400F98485 /* YSPhotosErrorDescriptionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,22 +82,6 @@
 		B80D45B9199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSAccessErrorDescriptionExampleTests-Info.plist"; sourceTree = "<group>"; };
 		B80D45BB199298E500DB2A8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B80D45BD199298E500DB2A8E /* YSAccessErrorDescriptionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionExampleTests.m; sourceTree = "<group>"; };
-		B80D45FC19929AAB00DB2A8E /* YSAccessErrorDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionView.h; sourceTree = "<group>"; };
-		B80D45FD19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionView.m; sourceTree = "<group>"; };
-		B80D460B1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionBaseView.h; sourceTree = "<group>"; };
-		B80D460C1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionBaseView.m; sourceTree = "<group>"; };
-		B80D460D1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionPermissionDeniedView.h; sourceTree = "<group>"; };
-		B80D460E1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionPermissionDeniedView.m; sourceTree = "<group>"; };
-		B80D460F1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccountErrorDescriptionPermissionDeniedView.xib; sourceTree = "<group>"; };
-		B80D46101993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionPrivacyView.h; sourceTree = "<group>"; };
-		B80D46111993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionPrivacyView.m; sourceTree = "<group>"; };
-		B80D46121993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccountErrorDescriptionPrivacyView.xib; sourceTree = "<group>"; };
-		B80D46131993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionZeroAccountView.h; sourceTree = "<group>"; };
-		B80D46141993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionZeroAccountView.m; sourceTree = "<group>"; };
-		B80D46151993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccountErrorDescriptionZeroAccountView.xib; sourceTree = "<group>"; };
-		B80D461E1993094F00DB2A8E /* YSPhotosErrorDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSPhotosErrorDescriptionView.h; sourceTree = "<group>"; };
-		B80D461F1993094F00DB2A8E /* YSPhotosErrorDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSPhotosErrorDescriptionView.m; sourceTree = "<group>"; };
-		B80D46201993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSPhotosErrorDescriptionView.xib; sourceTree = "<group>"; };
 		B82055B51A148D74002834AB /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
 		B82055B61A148D74002834AB /* facebook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@3x.png"; sourceTree = "<group>"; };
 		B82055B71A148D74002834AB /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person@2x.png"; sourceTree = "<group>"; };
@@ -111,13 +95,29 @@
 		B82055BF1A148D74002834AB /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
 		B82055C01A148D74002834AB /* twitter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@3x.png"; sourceTree = "<group>"; };
 		B82055CD1A149165002834AB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		B83610A61A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccessErrorDescriptionAlertView.xib; sourceTree = "<group>"; };
-		B83610A81A171C050096261D /* YSAccessErrorDescriptionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionAlertView.h; sourceTree = "<group>"; };
-		B83610A91A171C050096261D /* YSAccessErrorDescriptionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionAlertView.m; sourceTree = "<group>"; };
-		B83610AC1A1723770096261D /* YSAccessErrorDescriptionUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionUtility.h; sourceTree = "<group>"; };
-		B83610AD1A1723770096261D /* YSAccessErrorDescriptionUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionUtility.m; sourceTree = "<group>"; };
 		B83610B21A1723BA0096261D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/YSAccessErrorDescriptionLocalizable.strings; sourceTree = "<group>"; };
 		B83610B41A1723C50096261D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/YSAccessErrorDescriptionLocalizable.strings; sourceTree = "<group>"; };
+		B886DE331A4E424800F98485 /* YSAccessErrorDescriptionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionAlertView.h; sourceTree = "<group>"; };
+		B886DE341A4E424800F98485 /* YSAccessErrorDescriptionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionAlertView.m; sourceTree = "<group>"; };
+		B886DE351A4E424800F98485 /* YSAccessErrorDescriptionAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccessErrorDescriptionAlertView.xib; sourceTree = "<group>"; };
+		B886DE571A4E427C00F98485 /* YSAccessErrorDescriptionUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionUtility.h; sourceTree = "<group>"; };
+		B886DE581A4E427C00F98485 /* YSAccessErrorDescriptionUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionUtility.m; sourceTree = "<group>"; };
+		B886DE5D1A4E44A400F98485 /* YSAccessErrorDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccessErrorDescriptionView.h; sourceTree = "<group>"; };
+		B886DE5E1A4E44A400F98485 /* YSAccessErrorDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccessErrorDescriptionView.m; sourceTree = "<group>"; };
+		B886DE5F1A4E44A400F98485 /* YSAccountErrorDescriptionBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionBaseView.h; sourceTree = "<group>"; };
+		B886DE601A4E44A400F98485 /* YSAccountErrorDescriptionBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionBaseView.m; sourceTree = "<group>"; };
+		B886DE611A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionPermissionDeniedView.h; sourceTree = "<group>"; };
+		B886DE621A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionPermissionDeniedView.m; sourceTree = "<group>"; };
+		B886DE631A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccountErrorDescriptionPermissionDeniedView.xib; sourceTree = "<group>"; };
+		B886DE641A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionPrivacyView.h; sourceTree = "<group>"; };
+		B886DE651A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionPrivacyView.m; sourceTree = "<group>"; };
+		B886DE661A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccountErrorDescriptionPrivacyView.xib; sourceTree = "<group>"; };
+		B886DE671A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSAccountErrorDescriptionZeroAccountView.h; sourceTree = "<group>"; };
+		B886DE681A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSAccountErrorDescriptionZeroAccountView.m; sourceTree = "<group>"; };
+		B886DE691A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSAccountErrorDescriptionZeroAccountView.xib; sourceTree = "<group>"; };
+		B886DE6A1A4E44A400F98485 /* YSPhotosErrorDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSPhotosErrorDescriptionView.h; sourceTree = "<group>"; };
+		B886DE6B1A4E44A400F98485 /* YSPhotosErrorDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSPhotosErrorDescriptionView.m; sourceTree = "<group>"; };
+		B886DE6C1A4E44A400F98485 /* YSPhotosErrorDescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSPhotosErrorDescriptionView.xib; sourceTree = "<group>"; };
 		F9C15BEBA71B481F9DA9C825 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -226,27 +226,24 @@
 		B80D45C71992997600DB2A8E /* YSAccessErrorDescription */ = {
 			isa = PBXGroup;
 			children = (
-				B80D45FC19929AAB00DB2A8E /* YSAccessErrorDescriptionView.h */,
-				B80D45FD19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m */,
-				B80D460B1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.h */,
-				B80D460C1993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m */,
-				B80D460D1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.h */,
-				B80D460E1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m */,
-				B80D460F1993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib */,
-				B80D46101993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.h */,
-				B80D46111993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.m */,
-				B80D46121993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.xib */,
-				B80D46131993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.h */,
-				B80D46141993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.m */,
-				B80D46151993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib */,
-				B80D461E1993094F00DB2A8E /* YSPhotosErrorDescriptionView.h */,
-				B80D461F1993094F00DB2A8E /* YSPhotosErrorDescriptionView.m */,
-				B80D46201993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib */,
-				B83610A81A171C050096261D /* YSAccessErrorDescriptionAlertView.h */,
-				B83610A91A171C050096261D /* YSAccessErrorDescriptionAlertView.m */,
-				B83610A61A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib */,
-				B83610AC1A1723770096261D /* YSAccessErrorDescriptionUtility.h */,
-				B83610AD1A1723770096261D /* YSAccessErrorDescriptionUtility.m */,
+				B886DE5D1A4E44A400F98485 /* YSAccessErrorDescriptionView.h */,
+				B886DE5E1A4E44A400F98485 /* YSAccessErrorDescriptionView.m */,
+				B886DE5F1A4E44A400F98485 /* YSAccountErrorDescriptionBaseView.h */,
+				B886DE601A4E44A400F98485 /* YSAccountErrorDescriptionBaseView.m */,
+				B886DE611A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.h */,
+				B886DE621A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.m */,
+				B886DE631A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.xib */,
+				B886DE641A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.h */,
+				B886DE651A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.m */,
+				B886DE661A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.xib */,
+				B886DE671A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.h */,
+				B886DE681A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.m */,
+				B886DE691A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.xib */,
+				B886DE6A1A4E44A400F98485 /* YSPhotosErrorDescriptionView.h */,
+				B886DE6B1A4E44A400F98485 /* YSPhotosErrorDescriptionView.m */,
+				B886DE6C1A4E44A400F98485 /* YSPhotosErrorDescriptionView.xib */,
+				B886DE321A4E424800F98485 /* AlertView */,
+				B886DE561A4E427C00F98485 /* Utility */,
 				B82055B41A148D74002834AB /* Images */,
 				B83610AB1A17234A0096261D /* Localization */,
 			);
@@ -279,6 +276,25 @@
 				B83610B31A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		B886DE321A4E424800F98485 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				B886DE331A4E424800F98485 /* YSAccessErrorDescriptionAlertView.h */,
+				B886DE341A4E424800F98485 /* YSAccessErrorDescriptionAlertView.m */,
+				B886DE351A4E424800F98485 /* YSAccessErrorDescriptionAlertView.xib */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		B886DE561A4E427C00F98485 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B886DE571A4E427C00F98485 /* YSAccessErrorDescriptionUtility.h */,
+				B886DE581A4E427C00F98485 /* YSAccessErrorDescriptionUtility.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,24 +380,24 @@
 				B80D45AB199298E400DB2A8E /* Images.xcassets in Resources */,
 				B82055CA1A148D74002834AB /* setting@3x.png in Resources */,
 				B82055CB1A148D74002834AB /* twitter@2x.png in Resources */,
-				B80D46181993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.xib in Resources */,
-				B80D461C1993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.xib in Resources */,
 				B80D459D199298E400DB2A8E /* InfoPlist.strings in Resources */,
 				B83610B11A1723BA0096261D /* YSAccessErrorDescriptionLocalizable.strings in Resources */,
 				B82055C21A148D74002834AB /* facebook@3x.png in Resources */,
 				B82055C71A148D74002834AB /* privacy@2x.png in Resources */,
+				B886DE721A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.xib in Resources */,
 				B82055C41A148D74002834AB /* person@3x.png in Resources */,
 				B82055C31A148D74002834AB /* person@2x.png in Resources */,
-				B83610A71A171BD60096261D /* YSAccessErrorDescriptionAlertView.xib in Resources */,
+				B886DE761A4E44A400F98485 /* YSPhotosErrorDescriptionView.xib in Resources */,
 				B82055C51A148D74002834AB /* photos@2x.png in Resources */,
+				B886DE741A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.xib in Resources */,
 				B82055C91A148D74002834AB /* setting@2x.png in Resources */,
-				B80D461A1993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.xib in Resources */,
 				B82055C81A148D74002834AB /* privacy@3x.png in Resources */,
 				B80D45A6199298E400DB2A8E /* Main.storyboard in Resources */,
 				B82055C11A148D74002834AB /* facebook@2x.png in Resources */,
-				B80D46221993094F00DB2A8E /* YSPhotosErrorDescriptionView.xib in Resources */,
 				B82055C61A148D74002834AB /* photos@3x.png in Resources */,
 				B82055CC1A148D74002834AB /* twitter@3x.png in Resources */,
+				B886DE701A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.xib in Resources */,
+				B886DE4A1A4E424800F98485 /* YSAccessErrorDescriptionAlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,17 +449,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B80D46191993093D00DB2A8E /* YSAccountErrorDescriptionPrivacyView.m in Sources */,
-				B80D46211993094F00DB2A8E /* YSPhotosErrorDescriptionView.m in Sources */,
+				B886DE6F1A4E44A400F98485 /* YSAccountErrorDescriptionPermissionDeniedView.m in Sources */,
+				B886DE6D1A4E44A400F98485 /* YSAccessErrorDescriptionView.m in Sources */,
+				B886DE731A4E44A400F98485 /* YSAccountErrorDescriptionZeroAccountView.m in Sources */,
 				B80D45A9199298E400DB2A8E /* ViewController.m in Sources */,
-				B80D45FE19929AAB00DB2A8E /* YSAccessErrorDescriptionView.m in Sources */,
-				B80D46171993093D00DB2A8E /* YSAccountErrorDescriptionPermissionDeniedView.m in Sources */,
-				B80D461B1993093D00DB2A8E /* YSAccountErrorDescriptionZeroAccountView.m in Sources */,
-				B83610AE1A1723770096261D /* YSAccessErrorDescriptionUtility.m in Sources */,
-				B80D46161993093D00DB2A8E /* YSAccountErrorDescriptionBaseView.m in Sources */,
+				B886DE591A4E427C00F98485 /* YSAccessErrorDescriptionUtility.m in Sources */,
+				B886DE491A4E424800F98485 /* YSAccessErrorDescriptionAlertView.m in Sources */,
+				B886DE751A4E44A400F98485 /* YSPhotosErrorDescriptionView.m in Sources */,
+				B886DE711A4E44A400F98485 /* YSAccountErrorDescriptionPrivacyView.m in Sources */,
+				B886DE6E1A4E44A400F98485 /* YSAccountErrorDescriptionBaseView.m in Sources */,
 				B80D45A3199298E400DB2A8E /* AppDelegate.m in Sources */,
 				B80D459F199298E400DB2A8E /* main.m in Sources */,
-				B83610AA1A171C050096261D /* YSAccessErrorDescriptionAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
