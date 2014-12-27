@@ -11,6 +11,8 @@
 @interface YSAccessErrorDescriptionAlertView : UIView
 
 + (instancetype)viewWithTitle:(NSString*)title contentView:(UIView*)contentView;
+
 - (void)show;
+- (void)showWithDidFinishDismissingCompletion:(void(^)(void))didFinishDismissingCompletion;
 
 @end

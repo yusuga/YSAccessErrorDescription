@@ -42,13 +42,22 @@
 
 - (void)show
 {
+    [self showWithDidFinishDismissingCompletion:NULL];
+}
+
+- (void)showWithDidFinishDismissingCompletion:(void(^)(void))didFinishDismissingCompletion
+{
     KLCPopup *popup = [KLCPopup popupWithContentView:self
                                             showType:KLCPopupShowTypeBounceInFromBottom
                                          dismissType:KLCPopupDismissTypeBounceOutToBottom
                                             maskType:KLCPopupMaskTypeDimmed
                             dismissOnBackgroundTouch:YES
                                dismissOnContentTouch:YES];
+    
+    popup.didFinishDismissingCompletion = didFinishDismissingCompletion;
+    
     [popup show];
 }
+
 
 @end
