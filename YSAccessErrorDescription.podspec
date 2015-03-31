@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'YSAccessErrorDescription'
-  s.version = '0.1.3'
+  s.version = '0.1.4'
   s.summary = 'iOS access errors description.'
   s.homepage = 'https://github.com/yusuga/YSAccessErrorDescription'
   s.license = 'MIT'
