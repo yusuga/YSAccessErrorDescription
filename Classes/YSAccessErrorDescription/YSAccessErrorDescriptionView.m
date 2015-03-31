@@ -68,11 +68,8 @@
     self.privacyImageView.image = [[UIImage imageNamed:@"privacy"] ys_filter:filter];
     
     if (self.appImageView) {
-        UIImage *appIcon = [UIImage imageNamed:@"AppIcon60x60"];
-        UIImage *padAppIcon = [UIImage imageNamed:@"AppIcon76x76"];
-        if (padAppIcon.size.width > appIcon.size.width) {
-            appIcon = padAppIcon;
-        }        
+        UIImage *appIcon = [YSHelper appIcon];
+        
         self.appImageView.image = [appIcon ys_filter:[self imageFilter]];
         self.appLabel.text = [NSString stringWithFormat:self.appLabel.text, [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]];
         [self.appLabel sizeToFit];
