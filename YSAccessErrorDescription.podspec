@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   
   s.dependency 'YSHelper'
   s.dependency 'YSImageFilter'
-  s.dependency 'KLCPopup'
+  s.dependency 'KLCPopup', '1.1-yusuga'
   
   s.subspec 'Utility' do |ss|
     ss.source_files = 'Classes/YSAccessErrorDescription/Utility/*.{h,m}'

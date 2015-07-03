@@ -1,32 +1,29 @@
 PODS:
-  - AFNetworking/Reachability (2.5.1)
-  - CocoaLumberjack (2.0.0-rc2):
-    - CocoaLumberjack/Default (= 2.0.0-rc2)
-    - CocoaLumberjack/Extensions (= 2.0.0-rc2)
-  - CocoaLumberjack/Core (2.0.0-rc2)
-  - CocoaLumberjack/Default (2.0.0-rc2):
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.0-rc2):
+  - CocoaLumberjack/Extensions (2.0.1):
     - CocoaLumberjack/Default
-  - KLCPopup (1.1)
-  - YSAccountStore (0.0.11):
-    - AFNetworking/Reachability
-  - YSHelper (0.0.3):
+  - KLCPopup (1.1-yusuga)
+  - YSAccountStore (0.1.1)
+  - YSHelper (0.0.4):
     - CocoaLumberjack (~> 2.0.0-rc)
   - YSImageFilter (0.1.7)
 
 DEPENDENCIES:
-  - KLCPopup
+  - KLCPopup (= 1.1-yusuga)
   - YSAccountStore
   - YSHelper
   - YSImageFilter
 
 SPEC CHECKSUMS:
-  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
-  CocoaLumberjack: 6027cd9a0665203a7df456c526e137f02cd547e1
-  KLCPopup: 4f6f34731088de77009bc920ec45b7fb241ac8bc
-  YSAccountStore: 1afefe0c7608c65220ddfb93b9c3654144c1ab3c
-  YSHelper: e5fc977db37c6978d99c152b5ede65eaef80b914
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  KLCPopup: 00b1cc5e2b2dcdafc639b6be0a359d8d57475c11
+  YSAccountStore: 597bf4df38b82fcb62fd362d0a2ab364df9fda2a
+  YSHelper: 512a244d97f843fab83353c8e32a1a646be8d03b
   YSImageFilter: c5aaf64c9cd71c308e138476840145bcece3ff75
 
 COCOAPODS: 0.35.0
