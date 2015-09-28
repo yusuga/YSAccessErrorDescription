@@ -1,5 +1,8 @@
+source 'https://github.com/yusuga/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '7.0'
-pod 'YSHelper'
+pod 'YSUtility'
 pod 'YSImageFilter'
 pod 'KLCPopup', '1.1-yusuga'
 

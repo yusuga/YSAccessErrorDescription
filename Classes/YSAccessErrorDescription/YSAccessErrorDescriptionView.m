@@ -7,7 +7,7 @@
 //
 
 #import "YSAccessErrorDescriptionView.h"
-#import <YSHelper/YSHelper.h>
+#import <YSUtility/YSUtility.h>
 #import "YSAccountErrorDescriptionPrivacyView.h"
 #import "YSAccountErrorDescriptionZeroAccountView.h"
 #import "YSAccountErrorDescriptionPermissionDeniedView.h"
@@ -55,7 +55,7 @@
 {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];
     NSArray *views = [nib instantiateWithOwner:self options:nil];
-    NSInteger tag = [YSHelper isJapaneseLanguage] ? 0 : 1;
+    NSInteger tag = [YSUtility isJapaneseLanguage] ? 0 : 1;
     for (UIView *v in views) {
         if (v.tag == tag) {
             self = (id)v;
@@ -68,7 +68,7 @@
     self.privacyImageView.image = [[UIImage imageNamed:@"privacy"] ys_filter:filter];
     
     if (self.appImageView) {
-        UIImage *appIcon = [YSHelper appIcon];
+        UIImage *appIcon = [YSUtility appIcon];
         
         self.appImageView.image = [appIcon ys_filter:[self imageFilter]];
         self.appLabel.text = [NSString stringWithFormat:self.appLabel.text, [[NSBundle mainBundle] infoDictionary][@"CFBundleDisplayName"]];
