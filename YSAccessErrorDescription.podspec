@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'YSAccessErrorDescription'
-  s.version = '0.1.4'
+  s.version = '0.2.0'
   s.summary = 'iOS access errors description.'
   s.homepage = 'https://github.com/yusuga/YSAccessErrorDescription'
   s.license = 'MIT'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true    
   s.compiler_flags = '-fmodules'
   
-  s.dependency 'YSHelper'
+  s.dependency 'YSUtility'
   s.dependency 'YSImageFilter'
   s.dependency 'KLCPopup', '1.1-yusuga'
   
